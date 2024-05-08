@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
     <ToastContainer />
       <Navbar />
       <hr />
