@@ -2,16 +2,16 @@ import foodModel from "../models/foodModel.js";
 import fs from 'fs'
 
 // all food list
-// const listFood = async (req, res) => {
-//     try {
-//         const foods = await foodModel.find({})
-//         res.json({ success: true, data: foods })
-//     } catch (error) {
-//         console.log(error);
-//         res.json({ success: false, message: "Error" })
-//     }
+const listFood = async (req, res) => {
+    try {
+        const foods = await foodModel.find({})
+        res.json({ success: true, data: foods })
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: "Error" })
+    }
 
-// }
+}
 
 // add food
 const addFood = async (req, res) => {
@@ -51,4 +51,4 @@ const addFood = async (req, res) => {
 
 // }
 
-export { addFood }
+export { addFood, listFood }
